@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&family=Italianno&family=Libre+Bodoni:wght@500&display=swap" rel="stylesheet">
+    <title>Eat & Code | Contact us</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Eat & Code</h1></a>
+        <a href="recipe.html"><p>Recipes</p></a>
+        <a href="about.html"><p>About</p></a>
+        <a href="contact.html"><p>Contact</p></a>
+        <hr>
+    </header>
+    <div class="contact-us">
+        <h1>CONTACT US</h1>
+    </div>
+    
+    <div class="contact-form">
+        <form action="/contact.html#validation" method="get" class="form-contact"> //double check method
+            <fieldset>
+                <legend>Contact us</legend>
+                <label for="nameInput">Please enter your name</label>
+                <input type="text" name="name" id="nameInput" placeholder="John Doe" required/>
+                <label for="emailInput">Please enter your Email</label>
+                <input type="email" name ="email" id="emailInput" placeholder="name@example.com" required>
+                <label for="subjectInput">Subject (more than 15 characters required)</label>
+                <input type="text" name="subject" id="subjectInput" required>
+                <label for="messageInput">Message:</label>
+                <input type="text" name="message" id="messageInput" required>
+                <button>Send</button>
+            </fieldset>
+        </form>
+    </div>
+    
+
+    <footer>
+        <a href="">Up</a>
+        <ul>
+            <h3>Popular Recipes</h3>
+            <li>Mango</li>
+        </ul>
+        <ul>
+            <h3>Social Media</h3>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+        </ul>
+        <p>Copyright Eat & Code © 2022</p>
+        <div>
+            <a href="">Privacy Policy</a>
+            <a href="">Cookie Prefrences</a>
+        </div>
+    </footer>
+    <script src="/js/contact.js"></script>  
+</body>
+</html>

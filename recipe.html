@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&family=Italianno&family=Libre+Bodoni:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Eat & Code</h1></a>
+        <a href="recipe.html"><p>Recipes</p></a>
+        <a href="about.html"><p>About</p></a>
+        <a href="contact.html"><p>Contact</p></a>
+        <hr>
+    </header>
+    <main>
+        <div class="recipe-container"></div>
+        <div class="card-actions">
+            <button id="load-more">Load more recipes</button>
+            <span>Showing
+                <span id="card-count"></span> of
+                <span id="card-total"></span> cards
+            </span>
+        </div>
+    </main>
+    <footer>
+        <a href="">Up</a>
+        <ul>
+            <h3>Popular Recipes</h3>
+            <li>Mango</li>
+        </ul>
+        <ul>
+            <h3>Social Media</h3>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+        </ul>
+        <p>Copyright Eat & Code © 2022</p>
+        <div>
+            <a href="">Privacy Policy</a>
+            <a href="">Cookie Prefrences</a>
+        </div>
+    </footer>
+    <script src="/js/fetchRecipes.js"></script>
+</body>
+</html>
