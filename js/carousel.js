@@ -31,6 +31,7 @@ displayCarousel();
         const prevBtn = document.getElementById("slide-left");
         const nextBtn = document.getElementById("slide-right");
         const slide = document.querySelector(".slide");
+        
         nextBtn.addEventListener("click", () => {
             const slideWidth = slide.clientWidth;
             slidesContainer.scrollLeft += slideWidth;
