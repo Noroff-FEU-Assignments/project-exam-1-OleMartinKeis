@@ -17,7 +17,6 @@ async function fetchDetail() {
         var img = document.getElementById("myImg");
         var modalImg = document.getElementById("img01");
         var captionText = document.getElementById("caption");
-        modalImg = recipeDetails.images[0].src;
         captionText = recipeDetails.name;
 
         img.onclick = function(){
@@ -47,7 +46,7 @@ function createHTML(recipeDetails) {
     
 
     detailContainer.innerHTML = `<h1 class="detail-h1">${recipeDetails.name}</h1>
-                                <div class="recipes-details">
+                                <div class="recipes-details" style="max-width: 400px">
                                     <img src="${recipeDetails.images[0].src}" class ="open-recipe-image" id="myImg"/>
                                     <div id="recipeModal" class="modal">
                                         <span class="close">&times;</span>

@@ -45,15 +45,18 @@ header a {
     font-weight: 600;
 }
 
-header a.active, a:hover{
+header .active, a:hover{
     background-color: lightgrey;
     transition: .5s;
-    color: white;
+    color: black;
     border-radius: 3px;
 }
 
+a:active {
+    color: black;
+}
 
-header a:visited {
+a:visited {
     color: black;
 }
 
@@ -156,19 +159,24 @@ header a:visited {
 /* Carousel */
 
 .carousel-background  {
-    background-color: rgb(230, 230, 230);
+    background-color:#A7DFA5;
     border-radius: 4px;
-    padding: 18px;
+    max-width: 600px;
+    max-height: 440px;
+    border: 1px solid #829278;
+    margin: 0 auto;
+    padding-bottom: 0;
 }
 .slider-wrapper {
     margin: 1rem;
+    padding: 15px;
     position: relative;
     overflow: hidden;
 }
 
 .slides-container{
     height: calc(55vh - 2rem);
-    width: 100%;
+    max-width: 600px;
     display: flex;
     list-style: none;
     margin: 0;
@@ -241,10 +249,14 @@ header a:visited {
     width: 100%;
     height: 100%;
     flex: 1 0 100%;
-    max-width: 350px;
+    min-width: 350px;
     max-height: 350px;
 }
 
+.slides-container::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
+}
 
 /* About us */
 
@@ -406,11 +418,16 @@ legend{
 .recipes-details {
     font-family: inria sans, 'Times New Roman', Times, serif;
     margin-left:  15px;
-    max-width: 100px;
+    max-width: 400px;
 }
 
 .Y2IQFc {
     font-family: inria sans, 'Times New Roman', Times, serif;
+    max-width: 350px;
+}
+
+#tw-target-text {
+    max-width: 350px;
 }
 
 .open-recipe-image{
@@ -418,7 +435,7 @@ legend{
     cursor: pointer;
     transition: 0.3s;
     max-width: 325px;
-
+    margin: 0 auto;
 }
 
 .open-recipe-image:hover {
@@ -437,17 +454,18 @@ legend{
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    margin: 0 auto;
 }
 
 .modal-content {
-    margin: 0 auto;
+    margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
 }
 
 #caption {
-    margin: auto;
+    margin: 0 auto;
     display: block;
     width: 80%;
     max-width: 700px;
@@ -486,7 +504,7 @@ legend{
 }
   
   /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
+  @media only screen and (max-width: 800px){
     .modal-content {
         max-width: 250px;
         margin: 0 auto;
@@ -494,10 +512,14 @@ legend{
 
     .modal{
         margin: 0 auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
+        max-width: 800px;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
     }
+    #caption {
+        max-width: 400px;
+    }
+
 }
 
 /* Footer */
@@ -507,6 +529,6 @@ footer{
     color: #FFFFFF;
     letter-spacing: 2px;
     padding: 15px;
-    margin: 0;
+    margin-left: 0;
     max-width: 100%;
 }
