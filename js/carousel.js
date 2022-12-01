@@ -27,21 +27,21 @@ async function displayCarousel () {
 
 displayCarousel();
 
-    function buttonActivate(){
-        const prevBtn = document.getElementById("slide-left");
-        const nextBtn = document.getElementById("slide-right");
-        const slide = document.querySelector(".slide");
+function buttonActivate(){
+    const prevBtn = document.getElementById("slide-left");
+    const nextBtn = document.getElementById("slide-right");
+    const slide = document.querySelector(".slide");
         
-        nextBtn.addEventListener("click", () => {
-            const slideWidth = slide.clientWidth;
-            slidesContainer.scrollLeft += slideWidth;
-        });
+    nextBtn.addEventListener("click", () => {
+        const slideWidth = slide.clientWidth;
+        slidesContainer.scrollLeft += slideWidth;
+    });
 
-        prevBtn.addEventListener("click", () => {
-            const slideWidth = slide.clientWidth;
-            slidesContainer.scrollLeft -= slideWidth;
-        });
-    };
+    prevBtn.addEventListener("click", () => {
+        const slideWidth = slide.clientWidth;
+        slidesContainer.scrollLeft -= slideWidth;
+    });
+};
 
 
 
