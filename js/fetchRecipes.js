@@ -23,7 +23,7 @@ async function getRecipes(url){
         recipes.forEach(product => {
            recipeContainer.innerHTML += `<a href="detail.html?id=${product.id}" class="recipes" >
                                             <h2>${product.name}</h2><img class="recipes-image" src="${product.images[0].src}" style="max-width: 250px;">
-                                            </a><div class="card-space"></div>` 
+                                        </a><div class="card-space"></div>` 
             
 
             loadMoreButton.onclick = function() {
