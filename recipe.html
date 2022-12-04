@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Take a look at our fantastic recipes! We have steaks, cakes and everything between.">
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&family=Italianno&family=Libre+Bodoni:wght@500&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Eat & Code | Recipes</title>
     <!-- Hotjar Tracking Code for Project Exam -->
 <script>
     (function(h,o,t,j,a,r){
@@ -28,29 +29,30 @@
         <hr>
     </header>
     <main>
-        <div class="recipe-container"></div>
+        <div class="recipe-container">
+            <div class="loader"></div>
+        </div>
         <div class="card-actions">
             <button id="load-more">Load more recipes</button>
-            <span>Showing
+            <span class="span-text">Showing
                 <span id="card-count"></span><span class="count-card"></span> of
                 <span id="card-total"></span> cards
             </span>
         </div>
     </main>
     <footer>
-        <a href="">Up</a>
-        <ul>
+        <ul class="footer-flex1">
             <h3>Popular Recipes</h3>
             <li>Mango</li>
         </ul>
-        <ul>
+        <ul class="footer-flex2">
             <h3>Social Media</h3>
             <li>Facebook</li>
             <li>Twitter</li>
             <li>Instagram</li>
         </ul>
-        <p>Copyright Eat & Code © 2022</p>
         <div>
+            <p>Copyright Eat & Code © 2022</p>
             <a href="">Privacy Policy</a>
             <a href="">Cookie Prefrences</a>
         </div>

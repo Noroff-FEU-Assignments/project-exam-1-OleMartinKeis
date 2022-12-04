@@ -5,6 +5,7 @@ const cardCount = document.querySelector("#card-count")
 const countCard = document.querySelector(".count-card")
 const cardTotal = document.querySelector("#card-total")
 
+
 cardTotal.innerHTML="12";
 
 async function getRecipes(url){
